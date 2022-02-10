@@ -1,0 +1,169 @@
+.page
+{
+    height: 600px;
+    background-image: url(sky.jpg);
+    background-size: cover;
+    border-left: 10px solid orange;
+    border-top: 10px solid white;
+    border-right: 10px solid green;
+    position: relative;
+    overflow: hidden;
+}
+.heading
+{
+    position: absolute;
+    left: 400px;
+}
+.hd1
+{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    background-color: orange;
+}
+.hd2
+{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    background-color: white;
+}
+.hd3
+{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    background-color: green;
+}
+.sun
+{
+    position: absolute;
+    left: 1150px;
+    top: 50px;
+    animation-name: sun;
+    animation-duration: 75s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes sun
+{
+    0%
+    {
+        transform: translateX(-5px);
+    }
+    100%
+    {
+        transform: translateX(-800px);
+    }
+}
+.city
+{
+    height: 250px;
+    width: 500%;
+    background-image: url(city.png);
+    background-repeat: repeat-x;
+    position: absolute;
+    top: 144px;
+    animation-name: city;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;   
+}
+@keyframes city
+{
+    100%
+    {
+        transform: translateX(-2000px);
+    }
+}
+.road
+{
+    height: 100%;
+    width: 500%;
+    background-image: url(road.jpg);
+    background-repeat: repeat-x;
+    position: absolute;
+    top: 394px;
+    animation-name: road;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;    
+}
+@keyframes road
+{
+    100%
+    {
+        transform: translateX(-2000px);
+    }
+}
+.car
+{
+    width: 400px;
+    left: 50%;
+    bottom: 100px;
+    transform: translateX(-50%);
+    position: absolute;
+}
+.car img
+{
+    width: 100%;
+    animation-name: car;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes car
+{
+    100%
+    {
+        transform: translateY(-1px);
+    }
+    50%
+    {
+        transform: translateY(1px);
+    }
+    0%
+    {
+        transform: translateY(-1px);
+    }
+}
+.wheel
+{
+    left: 50%;
+    bottom: 178px;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: 2;
+}
+.wheel img
+{
+    width: 72px;
+    height: 72px;
+    animation-name: wheels;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.back
+{
+     left: -165px;
+     position: absolute;
+}
+.front
+{
+    left: 80px;
+    position: absolute;
+}
+@keyframes wheels
+{
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+.flag
+{
+    position: absolute;
+    left: 740px;
+    top: 310px;
+}
